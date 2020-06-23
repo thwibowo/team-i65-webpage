@@ -470,12 +470,10 @@ footer{
   html {
     font-size: 90%;
   }
-
   header.active {
     height: 100vh;
     transition: all .5s ease;
   }
-
   header nav .burger {
     display: block;
   }
@@ -557,8 +555,94 @@ footer{
   .why-us-info h3 {
     width: 100%;
   }
-}
+  .service {
+    max-width: 768px;
+    width: auto;
+  }
+  .testimonials {
+    margin-bottom: auto;
+  }
+  .testimonial {
+    height: auto;
+    width: 100%;
+    max-width: 768px;
+    align-items: center; 
+  }
+  .form {
+    margin-top: auto;
+  }
+  .form-signup {
+    width: 80%;
+    float: left;
+  }
+  
+  .join-head{
+	font-size: 20px;
+  }
+  
+  .form-signup{
+	text-align: left;
+	}
 
+	.form-signup p{
+		font-size: 18px;
+	}
+
+	input{
+		width: auto;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 10px;
+		font-size: 16px;
+		border-radius: 5px;
+		border: 1px solid #6969696;
+	}
+	
+
+	.socmed{
+		margin-top: 30px;
+		margin-bottom: 40px
+	}
+
+	.socmed li{
+		float: none;
+	}
+
+	.form-head{
+		font-size: 22px;
+	}
+	
+	.socmed-img{
+		margin-bottom: 10px;
+		width: 50px;
+		height: 50px;
+		filter:grayscale(100%);
+	}
+	
+	.team-socmed{
+		
+	  font-size:24px;
+	  font-weight: bold;
+	  
+	}
+	
+	.footer-logo{
+		font-size: 12px;
+		float: none;
+		margin-bottom: 30px;
+	}
+	
+	.footer-list{
+		float: none;
+		
+	}
+
+	.footer-list li{
+		float:left;
+		margin-right: 30px;
+	}
+	
+}
 /* Keyframes */
 @keyframes fadeDown {
   from {
