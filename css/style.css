@@ -1,0 +1,638 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #1f1f1f;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(182, 113, 246);
+}
+
+body {
+  font-family: 'Montserrat';
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 80%;
+  max-width: 1140px;
+  height:100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.team-name{
+	font-family: 'Pacifico';
+  color: #fff;
+  padding: 5px 7px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+.i65{
+	font-family: 'Bungee';
+	font-size: 22px;
+}
+
+.border{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.team-name.scroll{
+	background-color: rgb(30, 144, 255, .65);
+	backdrop-filter: blur(2rem);
+}
+
+.btn-primary {
+  background-color: blueviolet;
+  color: #fff;
+  border: 2px solid blueviolet;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: blueviolet;
+  transition: all .5s ease;
+}
+
+.btn-secondary {
+  border: 2px solid #fff;
+  background: transparent;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-primary {
+  color: blueviolet;
+}
+
+p {
+  opacity: .8;
+}
+
+/* Header */
+header {
+  background-color: rgb(138, 43, 226);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+header.scroll {
+  background-color: rgb(138, 43, 226, .65);
+  backdrop-filter: blur(2rem);
+}
+
+nav {
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.nav-brands {
+  font-size: 1.7rem;
+}
+
+.nav-brands span {
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav-links li a {
+  color: #fff;
+}
+
+header nav .burger {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  display: none;
+  z-index: 999;
+}
+
+header nav .burger>div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+  margin: 4px 0;
+}
+
+/* Landing Section */
+section.landing {
+  padding: 40px 0;
+  margin-top: 60px;
+  position: relative;
+}
+
+.landing-grid,
+.why-us-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-column-gap: 3rem;
+  grid-row-gap: 4rem;
+}
+
+.landing-img img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.landing-content h1 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.landing-content p {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+/* Company Section */
+.list-company {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #f3f3f3;
+}
+
+.list-company h3 {
+  margin-bottom: 3rem;
+  font-size: 20px;
+  color: #888;
+}
+
+.companies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.companies img {
+  margin: 0 auto;
+}
+
+.companies img:hover {
+  transform: translateY(-5px);
+  transition: transform .8s ease;
+}
+
+/* Why Us Section */
+.border-bottom::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 30px;
+  margin: 3px auto;
+  background-color: blueviolet;
+}
+
+.why-us {
+  padding: 100px 0;
+  opacity: 0;
+}
+
+.order4 {
+  order: 1;
+}
+
+.why-us h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.why-us-info h3 {
+  font-size: 1.8rem;
+  width: 70%;
+  margin-bottom: 1.5rem;
+}
+
+.why-us-info p {
+  line-height: 1.8;
+  font-size: 20px
+}
+
+.why-us-img:hover {
+  animation: rotate 4s infinite;
+}
+
+.why-us-img img {
+  width: 100%;
+}
+
+/* Service Section */
+.service {
+  padding: 80px 0;
+  background-color: #f4f4f4;
+  margin-bottom: 400px;
+}
+
+.service h2 {
+  margin-bottom: 50px;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.service-part{
+	text-align: center;
+}
+
+.service-part h3{
+	font-size: 1.3rem;
+	margin: 20px 0;
+}
+
+.service-part p{
+	opacity: 0.8;
+	font-size: 1rem;
+}
+
+.service-image{
+	height: 60px;
+}
+
+.testi-list{
+	text-align: center;
+}
+
+.testimonials{
+	margin-bottom: 100px;
+}
+
+.testimonial{
+	float: left;
+	width: 25%;
+	border-radius: 20px;
+	padding: 30px 20px;
+	height: 450px;
+	
+}
+
+.testimonial:hover{
+	border: solid 3px rgb(138, 43, 226);
+	box-shadow: 0 7px rgb(138, 43, 226, .65);
+}
+
+.testimonial p{
+	color: #2f4f4f;
+}
+
+.testimonial h4{
+	color: #696969;
+}
+
+.testi-head{
+	text-align: center;
+	font-size: 30px;
+	padding: 30px 0;
+	margin: 50px 0;
+	border-bottom: solid 3px #696969;
+}
+
+.icon{
+	width: 160px;
+	height: 160px;
+	border-radius: 80px;
+}
+
+.clear{
+	clear: left;
+}
+
+.team-socmed{
+	font-family: 'Pacifico';
+  color: #696969;
+  font-size:30px;
+  font-weight: bold;
+}
+
+.socmed{
+	float: left;
+}
+
+.socmed li{
+	float: left;
+}
+
+.form-head{
+	font-size: 30px;
+	margin: 20px 0px;
+}
+
+.form-signup{
+	float: right;
+	text-align: left;
+}
+
+.form-signup p{
+	font-size: 24px;
+}
+
+.form{
+	margin: 50px 50px;
+}
+
+.join-head{
+	font-size: 36px;
+	text-align: center;
+	font-weight: 600;
+}
+
+input{
+	width: 400px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	border: 1px solid #6969696;
+}
+
+.socmed-img{
+	margin: 0 10px;
+	float: left;
+	width: 50px;
+	height: 50px;
+	filter:grayscale(100%);
+}
+
+.socmed-img:hover{
+	cursor: pointer;
+	filter:grayscale(0%);
+	transition: 0.5s;
+}
+
+
+.btn-wrapper{
+	text-align: center;
+	margin: 30px 0;
+}
+
+.btn-signup{
+	padding: 10px 30px;
+	border-radius: 4px;
+	font-weight: 600;
+	font-size: 22px;
+	cursor: pointer;
+	background-color: blueviolet;
+	color: #fff;
+}
+
+.btn-signup:hover{
+	transition: 0.5s;
+	border: 2px solid blueviolet;
+	background-color: #fff;
+	color: blueviolet;
+}
+
+footer{
+	background-color: rgb(138, 43, 226);
+	color: #fff;
+	height: 140px;
+	padding: 20px;
+	float: bottom;
+}
+
+.footer-logo{
+	float: left;
+}
+
+.footer-list{
+	float: right;
+	color: #fff;
+}
+
+.footer-list li{
+	padding-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+
+  header.active {
+    height: 100vh;
+    transition: all .5s ease;
+  }
+
+  header nav .burger {
+    display: block;
+  }
+
+  .active .line-one {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+
+  .active .line-two {
+    opacity: 0;
+  }
+
+  header.active ul.nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    animation: fade 1s forwards;
+  }
+
+  header.active ul.nav-links li {
+    margin: 20px 0;
+  }
+
+  .active .line-three {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+
+  ul.nav-links {
+    display: none;
+  }
+
+  .landing-grid,
+  .why-us-content,
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .landing-content {
+    order: 1;
+  }
+  
+  .landing-content p{
+	  font-size: 20px;
+  }
+
+  .order1 {
+    order: 1;
+  }
+
+  .order2 {
+    order: 2;
+  }
+
+  .order3 {
+    order: 3;
+  }
+
+  .order4 {
+    order: 4;
+  }
+
+  .landing-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .list-company {
+    margin-top: 40px;
+  }
+
+  .companies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-us-info h3 {
+    width: 100%;
+  }
+}
+
+/* Keyframes */
+@keyframes fadeDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    height: 100vh;
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  from {
+    height: 60px;
+  }
+
+  to {
+    height: 100vh;
+  }
+}
+
+@keyframes back {
+  from {
+    height: 100vh;
+  }
+
+  to {
+    height: 60px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(1deg);
+  }
+
+  50% {
+    transform: rotate(0);
+  }
+
+  75% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
